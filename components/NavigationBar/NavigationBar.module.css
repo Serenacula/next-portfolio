@@ -1,0 +1,103 @@
+.navBar {
+    min-height: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    
+    background-color: #d8e3da;
+    
+    /* border-bottom: rgba(3, 3, 3, 0.507) solid 2px; */
+}
+
+/* The Logo */
+.logo {
+    font-family: "Great Vibes";
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: left;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.hiddenLogo {
+    width: 135px;
+    height: 72px;
+}
+
+/* Text styling for buttons */
+.textStyle {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+/* The Menu Button */
+
+.menuHamburger {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    z-index: 11;
+    right: 10px;
+    top: 10px;
+    margin: auto auto;
+    cursor: pointer;
+    
+    
+    background: transparent;
+    border: none;
+}
+
+.menuHamburger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 75%;
+    background: black;
+    border-radius: 4px;
+    opacity: 1;
+    left: 1;
+}
+
+
+@media screen and (max-width: 719px) {
+    .menuList {
+        height: 0px;
+        list-style: none;
+        width: 100vw;
+        overflow: hidden;
+        text-align: right;
+    }
+    
+    .menuList li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .menuList {
+        height: 0 !important;
+        align-self: center;
+        text-align: right;
+        flex-grow: 1;
+    }
+    
+    .menuList li {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .link {
+        padding: 15px;
+    }
+    
+    .menuHamburger {
+        display: none;
+    }
+}
