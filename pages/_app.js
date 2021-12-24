@@ -9,8 +9,7 @@ import Head from "next/head"
 // My Components
 import NavigationBar from "../components/NavigationBar/NavigationBar"
 
-// This brings in the menuItems json, for our navbar
-const menuItems = require("../resources/json/menuItems.json")
+
 
 
 
@@ -22,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 				<link rel="shortcut icon" href="images/favicon.png" />
 			</Head>
             
-            <NavigationBar links={menuItems} />
+            <NavigationBar />
 
 			<Component {...pageProps} />
 		</>

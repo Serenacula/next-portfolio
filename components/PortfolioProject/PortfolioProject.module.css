@@ -1,0 +1,24 @@
+.containerDiv {
+    max-width: 40%;
+    max-height: 500px;
+    
+    margin: 1px;
+    overflow: hidden;
+}
+
+.image {
+    max-width: 40%;
+    /* max-height: 500px; */
+}
+
+.title {
+    
+}
+
+.date {
+    
+}
+
+.description {
+    
+}

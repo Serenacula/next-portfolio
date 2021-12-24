@@ -6,6 +6,9 @@ import { gsap } from "gsap"
 import { useIsMount } from "../../resources/scripts/UseIsMount"
 import { combineClasses as combine } from "../../resources/scripts/utilities"
 
+// This brings in the menuItems json, for our navbar
+const menuItems = require("./menuItems.json")
+
 import styles from "./NavigationBar.module.css"
 
 /*
@@ -16,7 +19,7 @@ import styles from "./NavigationBar.module.css"
  */
 
 function NavigationBar(props) {
-	const links = props.links
+	const links = menuItems
 	const suppressLogo = props.suppressLogo
 
 	// Used to manage the opening and animation of the navbar menu
@@ -122,7 +125,6 @@ function NavigationBar(props) {
 }
 
 NavigationBar.propTypes = {
-	links: PropTypes.object.isRequired,
 	suppressLogo: PropTypes.bool,
 }
 

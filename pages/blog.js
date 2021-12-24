@@ -1,17 +1,18 @@
+import path from "path"
 import fs from "fs"
 import matter from "gray-matter"
 
 import styles from "../css/portfolio.module.css"
-import PortfolioProject from "../components/PortfolioProject/PortfolioProject"
+import BlogPost from "../components/BlogPost/BlogPost"
 
 export default function Portfolio( props ) {
     
-    const projects = props.projects
+    const posts = props.posts
     
     function makePosts(input) {
         let result = []
-        for (const project of input) {
-            result.push(<PortfolioProject project={project} key={project.slug} />)
+        for (const post of input) {
+            result.push(<BlogPost post={post} key={post.slug} />)
         }
         
         return result
@@ -19,22 +20,22 @@ export default function Portfolio( props ) {
     
     return (
         <div>
-            {makePosts(projects)}
+            {makePosts(posts)}
         </div>
     )
 }
 
 export async function getStaticProps() {
     // Grab the filenames
-    const files = fs.readdirSync("markdown/projects")
+    const files = fs.readdirSync("markdown/posts")
     
     // Loop through the filenames, to grab each one in turn.
-    const projects = files.map(file => {
+    const posts = files.map(file => {
         // Get the name of the slug
         const slug = file.replace(".md", "")
         
         // Get all the markdown, and grab the frontmatter and html-converted content from it using graymatter
-        const { data: frontmatter, content } = matter(fs.readFileSync("markdown/projects/" + file, "utf-8"))
+        const { data: frontmatter, content } = matter(fs.readFileSync("markdown/posts/" + file, "utf-8"))
         
         return {
             slug,
@@ -45,7 +46,7 @@ export async function getStaticProps() {
     
     return {
         props: {
-            projects
+            posts
         }
     }
 }
