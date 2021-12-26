@@ -4,7 +4,9 @@
     flex-wrap: wrap;
     padding-right: 50px;
     
-    background-color: #d8e3da;
+    background-color: #f1f9f9;
+    color: black
+    /* background-color: #ccedd2; */
     
     /* border-bottom: rgba(3, 3, 3, 0.507) solid 2px; */
 }
@@ -28,7 +30,7 @@
 /* Text styling for buttons */
 .textStyle {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     font-family: Montserrat, Arial, sans-serif;
     font-size: 1.3rem;
     line-height: 1.5rem;

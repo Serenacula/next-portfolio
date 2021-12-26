@@ -1,0 +1,150 @@
+@import "./responsive";
+@import "./colours";
+@import "./custom";
+
+
+
+.sectionTitle {
+	text-align: center;
+	padding-top: 60px;
+	font-family: Merriweather, serif;
+	font-size: 1.5rem;
+}
+
+.card {
+	box-shadow: 1px 2px 18px 2px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 1px 5px 18px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 2px 18px 2px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+
+	text-align: left;
+	margin: 15px 5px;
+	padding: 30px 15px;
+	max-width: 600px;
+	height: fit-content;
+    
+    background-color: $firstBackgroundColour;
+    
+    
+	h3 {
+        font-family: Merriweather, serif;
+		font-size: 1.2rem;
+		color: $secondTextColour;
+	}
+    
+	p {
+        font-size: 1rem;
+		line-height: 1.5rem;
+        color: $normalText;
+	}
+    
+    @include mobile() {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.firstSection {
+    @include mainColumn;
+	height: 100vh;
+	background-color: $firstBackgroundColour;
+    
+    
+
+	.mainTitle {
+		font-family: Great Vibes, cursive;
+		font-size: 4rem;
+		color: $firstTextColour;
+		padding-top: 58px;
+		padding-right: 8px;
+		line-height: 1.2;
+	}
+
+	.mainSubtitle {
+		font-family: Merriweather, serif;
+		font-size: 1.5rem;
+		color: $firstTextColour;
+	}
+
+	.headerImage {
+		position: relative;
+		top: 60px;
+		max-width: 550px;
+		margin: 0 auto;
+		padding-bottom: 1px;
+	}
+}
+
+.secondSection {
+	/* text-align: left; */
+	font-size: 1.1rem;
+    
+    .secondSectionCard {
+        /* box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40);
+        -webkit-box-shadow: 1px 5px 18px 2px rgba(0,0,0,0.30);
+        -moz-box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40); */
+        border-radius: 8px;
+        border: 2px solid black;
+    
+        text-align: center;
+        margin: 15px auto;
+        padding: 30px 15px;
+        max-width: 600px;
+        height: fit-content;
+    }
+}
+
+.thirdSectionMain,
+.fourthSection,
+.fifthSection {
+    @include mainColumn;
+	min-height: 100vh;
+    
+    @include desktop() {
+        display: flex;
+		align-items: center;
+        
+        h2 {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+}
+
+.thirdSection {
+	background-color: $thirdBackgroundColour;
+
+	.skillsTitle {
+		text-align: center;
+		padding-top: 60px;
+		font-family: Merriweather, serif;
+		font-size: 2rem;
+		color: $thirdTextColour;
+	}
+    
+    .thirdSectionMain {
+        .sectionTitle {
+            color: $thirdTextColour;
+        }
+    }
+}
+
+.fourthSection {
+    background-color: $fourthBackgroundColour;
+    
+    .sectionTitle {
+        color: $fourthTextColour;
+    }
+    
+    @include desktop() {
+        flex-direction: row-reverse;
+    }
+}
+
+.fifthSection {
+    background-color: $fifthBackgroundColour;
+    
+    .sectionTitle {
+        color: $fifthTextColour;
+    }
+}

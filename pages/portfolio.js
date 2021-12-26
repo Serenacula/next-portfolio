@@ -1,24 +1,35 @@
 import fs from "fs"
 import matter from "gray-matter"
+import { combineClasses } from "../../Gatsby Portfolio Website/portfolio/src/resources/scripts/utilities"
 
-import styles from "../css/portfolio.module.css"
 import PortfolioProject from "../components/PortfolioProject/PortfolioProject"
+
+const combine = combineClasses
+
+import styles from "../css/portfolio.module.scss"
 
 export default function Portfolio( props ) {
     
-    const projects = props.projects
+    let projects = props.projects
+    
+    // Sorting the projects by date
+    projects = projects.sort((b,a) => new Date(a.frontmatter.date) - new Date(b.frontmatter.date))
     
     function makePosts(input) {
         let result = []
         for (const project of input) {
-            result.push(<PortfolioProject project={project} key={project.slug} />)
+            if (project.frontmatter.posted === true) {
+                result.push(<PortfolioProject project={project} key={project.slug} />)
+            }
         }
         
         return result
     }
     
     return (
-        <div>
+        <div className={styles.mainDiv}>
+            <h1 className={styles.title}>Portfolio</h1>
+        
             {makePosts(projects)}
         </div>
     )

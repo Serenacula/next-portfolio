@@ -6,7 +6,7 @@ import Head from "next/head"
 import Image from "next/image"
 
 // CSS
-import styles from "../css/index.module.css"
+import styles from "../css/index.module.scss"
 
 import headerImage from "../public/images/amsterdam.png"
 
@@ -21,20 +21,19 @@ export default function Home() {
 
 
 			<main>
-                <div className="firstColourBackground">
-                    <div className={combine("mainColumn", styles.firstSection)}>
+                <div>
+                    <div className={combine(styles.mainColumn, styles.firstSection)}>
                         
-                        <h1 className={combine("firstColourText", styles.mainTitle)}>
+                        <h1 className={styles.mainTitle}>
                             <span style={{display: "inline-block"}}>Faylee</span>
                             {' '}
                             <span style={{display: "inline-block"}}>Murray Browne</span>
                         </h1>
                         
-                        <h3 className={combine("firstColourText", styles.mainSubtitle)}>I am a <span style={{color: "#a134ff"}}>queer</span>, self-taught junior web developer</h3>
+                        <h3 className={styles.mainSubtitle}>I am a <span style={{color: "#a134ff"}}>queer</span>, self-taught junior web developer</h3>
                         
                         <div className={styles.headerImage}>
-                            <Image 
-                                className={styles.headerImage} 
+                            <Image
                                 src={headerImage} 
                                 alt="Cartoon Houses"
                                 layout="intrinsic"
@@ -42,7 +41,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
+                
+                {/* This section's been removed because it looked unprofessional, and didn't add much to the page */}
                 {/* <div className="secondColourBackground">
                     
                     <div className={combine("mainColumn", styles.secondSection)}>
@@ -58,18 +58,15 @@ export default function Home() {
                     </div>
                 </div> */}
 			
-                <div className="thirdColourBackground">
+                <div className={styles.thirdSection}>
                 
-                    <div className="mainColumn">	
-                        <h2 className={combine(styles.sectionTitle, styles.skillsTitle, "thirdColourText")}>Skills</h2>
-                    </div>
-                
-                    {/* This bit will probably get abstracted into a different component, but I wanna build it first */}
-                    <div className={combine("mainColumn", styles.thirdSection)}>
+                    <h2 className={styles.skillsTitle}>Skills</h2>
+                    
+                    <div className={styles.thirdSectionMain}>
                         
-                        <h2 className={combine(styles.sectionTitle, "thirdColourText")}>Starting with the fundamentals</h2>
+                        <h2 className={styles.sectionTitle}>Starting with the fundamentals</h2>
                         
-                        <div className={combine("firstColourBackground", styles.card)}>
+                        <div className={styles.card}>
                             
                             <h3>HTML</h3>
                             <p>As the basis of everything, I've made sure I have a solid understanding of HTML.</p>
@@ -86,40 +83,30 @@ export default function Home() {
                     </div>
                 </div>
 			
-                <div className="fourthColourBackground">
-                
-                    {/* This bit will probably get abstracted into a different component, but I wanna build it first */}
-                    <div className={combine("mainColumn", styles.fourthSection)}>
+                <div className={styles.fourthSection}>
                         
-                        <h2 className={combine(styles.sectionTitle, "fourthColourText")}>Learning the backend</h2>
+                    <h2 className={styles.sectionTitle}>Learning the backend</h2>
+                    
+                    <div className={styles.card}>
                         
-                        <div className={combine("firstColourBackground", styles.card)}>
-                            
-                            <h3>Express</h3>
-                            <p>I can build a basic backend using express on the Node.js platform.</p>
-                            
-                            <h3>Git</h3>
-                            <p>I use Git for my source-control. It is also essential for deploying to platforms like Heroku.</p>
-                            
-                            <h3>MongoDB</h3>
-                            <p>Though not my biggest strength, learning a database system is an important skill, and one I have spent time on. It is an area I wish to expand on as I grow.</p>
-                            
-                            
-                        </div>
+                        <h3>Express</h3>
+                        <p>I can build a basic backend using express on the Node.js platform.</p>
                         
+                        <h3>Git</h3>
+                        <p>I use Git for my source-control. It is also essential for deploying to platforms like Heroku.</p>
+                        
+                        <h3>MongoDB</h3>
+                        <p>Though not my biggest strength, learning a database system is an important skill, and one I have spent time on. It is an area I wish to expand on as I grow.</p>
                         
                         
                     </div>
                 </div>
 			
-                <div className="fifthColourBackground">
-                
-                    {/* This bit will probably get abstracted into a different component at some point, but I wanna build it first */}
-                    <div className={combine("mainColumn", styles.fifthSection)}>
+                <div className={styles.fifthSection}>
                         
-                        <h2 className={combine(styles.sectionTitle, "fifthColourText")}>Building with modern frameworks</h2>
+                        <h2 className={styles.sectionTitle}>Building with modern frameworks</h2>
                         
-                        <div className={combine("firstColourBackground", styles.card)}>
+                        <div className={styles.card}>
                             
                             <h3>React</h3>
                             <p>My framework of choice, as well as an industry standard, I have spent the last two months getting comfortable with React. I find it both intuitive and well thought-out, and it is a skillset I wish to truly master.</p>
@@ -131,7 +118,6 @@ export default function Home() {
                             <p>A modern animation framework that works well with React, GSAP is my current choice for making beautiful and easy animations.</p>
                         </div>
                     </div>
-                </div>
             </main>
 		</div>
 	)

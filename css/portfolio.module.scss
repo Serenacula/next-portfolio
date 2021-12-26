@@ -1,0 +1,20 @@
+@import "./_colours";
+
+.mainDiv {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    
+    background-color: $firstBackgroundColour;
+    
+    .title {
+        text-align: center;
+        padding-bottom: 80px;
+        
+        font-family: Merriweather, serif;
+        font-size: 3.5rem;
+        color: $firstTextColour;
+    }
+}
+

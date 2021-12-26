@@ -1,0 +1,139 @@
+@import "../../css/colours";
+@import "../../css/responsive";
+
+.containerDiv {
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    
+    
+    .topDiv {
+    
+        height: fit-content;
+        
+        background-color: white;
+        color: black;
+        
+        display: flex;
+        
+        
+        
+        .leftBox {
+            width: 40%;
+            padding: 30px;
+            padding-right: 0;
+            display: block;
+            overflow: hidden;
+            
+            .image {
+                object-fit: cover;
+                min-width: 100%;
+                min-height: 100%;
+                border-radius: 5px;
+            }
+        }
+        
+        .rightBox {
+            width: 60%;
+            padding: 30px;
+            display: block;
+            height: fit-content;
+            
+            .title {
+                margin: 0;
+                font-family: Merriweather, serif;
+                color: $linkColour
+            }
+            
+            .date {
+                margin: 0;
+            }
+            
+            .description {
+                margin: 1px;
+                padding: 20px 0;
+                
+                line-height: 1.8em;
+            }
+            
+            .features {
+                display: flex;
+                height: 60px;
+                width: 100%;
+                
+                padding: 10px 0;
+                padding-left: 20px;
+                
+                background-color: rgb(230, 230, 230);
+                border-radius: 15px;
+                
+                .feature {
+                    display: inline-block;
+                    height: 100%;
+                    margin-right: 15px;
+                    padding: 0;
+                    min-width: 40px;
+                    max-width: 25%;
+                    max-height: 100%;
+                }
+            }
+        }
+        
+        @include mobile() {
+            display: block;
+            
+            .leftBox {
+                padding: 0;
+                width: 100%;
+            }
+            
+            .rightBox {
+                width: 100%;
+                padding-top: 15px;
+                .title {
+                    text-align: center;
+                }
+                
+                .description {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+    
+    .bottomDiv {
+        /* Div styling */
+        padding-top: 1px;
+        background-color: $fourthTextColour;
+        min-height: 30px;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        /* Text styling */
+        color: white;
+        text-align: left;
+    }
+    
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 719px) {
+    
+    .containerDiv {
+        flex-direction: column;
+    }
+    
+    .leftBox, .rightBox {
+        width: 100%;
+        
+    }
+}
+
+

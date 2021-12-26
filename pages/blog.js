@@ -2,7 +2,7 @@ import path from "path"
 import fs from "fs"
 import matter from "gray-matter"
 
-import styles from "../css/portfolio.module.css"
+import styles from "../css/blog.module.scss"
 import BlogPost from "../components/BlogPost/BlogPost"
 
 export default function Portfolio( props ) {
