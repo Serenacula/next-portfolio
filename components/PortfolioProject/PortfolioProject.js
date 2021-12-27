@@ -11,6 +11,7 @@ function PortfolioProject(props) {
 	const frontmatter = props.project.frontmatter
 	const content = props.project.content
 
+    // Make sure that an image exists, else display nothing.
     let image;
     if (frontmatter.image) {
         image = "/images/" + frontmatter.image
@@ -18,10 +19,13 @@ function PortfolioProject(props) {
         image = ""
     }
     
+    // This is a list of all the featured technologies associated with a project
     const features = frontmatter.features
     
+    // Loops through each feature on the list, adding its image into an array to be displayed
     function makeFeatures(features) {
         let result = []
+        
         for (const feature of features) {
             const key = slug + feature
             switch (feature) {
@@ -64,9 +68,7 @@ function PortfolioProject(props) {
                 default:
                     break
             }
-            
         }
-        
         return result
     }
 
@@ -82,7 +84,7 @@ function PortfolioProject(props) {
 						</Link>
 					</div>
 					<div className={styles.rightBox}>
-						<Link href="/projects/${project}">
+						<Link className={styles.title} href={`/projects/${slug}`}>
 							<a>
 								<h2 className={styles.title}>{frontmatter.title}</h2>
 							</a>

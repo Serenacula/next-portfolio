@@ -40,10 +40,14 @@
             display: block;
             height: fit-content;
             
-            .title {
-                margin: 0;
-                font-family: Merriweather, serif;
-                color: $linkColour
+            a {
+                .title {
+                    margin: 0;
+                    font-family: Merriweather, serif;
+                    color: $linkColour;
+
+                }
+                
             }
             
             .date {

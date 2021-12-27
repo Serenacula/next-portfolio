@@ -53,7 +53,7 @@ export async function getStaticProps() {
             content
         }
     })
-    
+    // This is the required format for passing props into the page function.
     return {
         props: {
             projects
