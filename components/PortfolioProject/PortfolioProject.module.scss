@@ -61,6 +61,12 @@
                 line-height: 1.8em;
             }
             
+            .featuresTitle {
+                font-family: Merriweather, serif;
+                color: $normalText;
+                margin-bottom: 10px;
+            }
+            
             .features {
                 display: flex;
                 height: 60px;

@@ -1,10 +1,7 @@
 import fs from "fs"
 import matter from "gray-matter"
-import { combineClasses } from "../../Gatsby Portfolio Website/portfolio/src/resources/scripts/utilities"
 
 import PortfolioProject from "../components/PortfolioProject/PortfolioProject"
-
-const combine = combineClasses
 
 import styles from "../css/portfolio.module.scss"
 

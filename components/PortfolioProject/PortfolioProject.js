@@ -91,7 +91,10 @@ function PortfolioProject(props) {
 						</Link>
 						{/* <p className={styles.date}>{frontmatter.date}</p> */}
 						<p className={styles.description}>{frontmatter.description}</p>
-						<div className={styles.features}>{makeFeatures(features)}</div>
+                        <div>
+                            <h3 className={styles.featuresTitle}>Technologies: </h3>
+                            <div className={styles.features}>{makeFeatures(features)}</div>
+                        </div>
 					</div>
 				</div>
                 <div className={styles.bottomDiv}>
