@@ -117,6 +117,7 @@
         padding-top: 1px;
         background-color: $fourthTextColour;
         min-height: 30px;
+        // height: 30px;
         width: 100%;
         padding-left: 30px;
         padding-right: 30px;
@@ -124,6 +125,10 @@
         /* Text styling */
         color: white;
         text-align: left;
+        
+        .date {
+            margin: 0;
+        }
     }
     
     

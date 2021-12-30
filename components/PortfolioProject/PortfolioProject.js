@@ -9,7 +9,9 @@ import styles from "./PortfolioProject.module.scss"
 function PortfolioProject(props) {
 	const slug = props.project.slug
 	const frontmatter = props.project.frontmatter
-	const content = props.project.content
+    
+    // Getting the date in a nice format
+    const date = new Date(frontmatter.date).toUTCString().replace(" 00:00:00 GMT", "")
 
     // Make sure that an image exists, else display nothing.
     let image;
@@ -38,8 +40,14 @@ function PortfolioProject(props) {
                 case "bootstrap":
                     result.push(<img className={styles.feature} src="/images/svg/bootstrap-logo.svg" alt="Bootstrap" title="Bootstrap CSS Library" key={key} />)
                     break
+                case "sass":
+                    result.push(<img className={styles.feature} src="/images/svg/sass-logo.svg" alt="Sass" title="Sass CSS Framework" key={key} />)
+                    break
                 case "javascript":
                     result.push(<img className={styles.feature} src="/images/svg/javascript-logo.svg" alt="Javascript" title="Javascript" key={key} />)
+                    break
+                case "typescript":
+                    result.push(<img className={styles.feature} src="/images/svg/typescript-logo.svg" alt="Typescript" title="Typescript Programming Language" key={key} />)
                     break
                 case "jquery":
                     result.push(<img className={styles.feature} src="/images/svg/jquery-logo.svg" alt="jQuery" title="jQuery Javascript Library" key={key} />)
@@ -98,7 +106,7 @@ function PortfolioProject(props) {
 					</div>
 				</div>
                 <div className={styles.bottomDiv}>
-                    
+                    {/* <p className={styles.date}>{date}</p> */}
                 </div>
 			</div>
 		</>

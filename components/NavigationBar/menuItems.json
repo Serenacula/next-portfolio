@@ -11,10 +11,6 @@
         {
             "name": "Portfolio",
             "url": "/portfolio"
-        },
-        {
-            "name": "Blog",
-            "url": "/blog"
         }
     ]
 }
