@@ -1,7 +1,95 @@
-.title {
-    
-}
+@import "./colours";
+@import "./responsive";
 
-.content {
+.mainDiv {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
     
+    padding: 50px 80px 50px;
+    
+    background-color: $firstBackgroundColour;
+    
+    @include mobile() {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    
+    .image {
+        width: 80%;
+        max-width: fit-content;
+        max-height: fit-content;
+        min-width: 600px;
+        
+        display: block;
+        margin: 0 auto;
+        // text-align: center;
+        
+        border: 2px solid black;
+        border-radius: 15px;
+        
+        @include mobile() {
+            width: 100%;
+            min-width: auto;
+        }
+    }
+    
+    .title {
+        text-align: center;
+        font-family: Merriweather, serif;
+        
+        margin: 0;
+        padding: 30px;
+        padding-bottom: 15px;
+    }
+    
+    .buttonContainer {
+        text-align: center;
+        padding-top: 0;
+        margin: 0;
+        
+        
+        
+        .button {
+            height: 40px;
+            width: 200px;
+            margin: 0 40px;
+            
+            font-family: Montserrat, Arial, Helvetica, sans-serif;
+            font-size: 1.1rem;
+            // text-shadow:0px 1px 0px #222222;
+            
+            color: white;
+            background-color: $linkColour;
+            
+            border-radius: 10px;
+            border: 2px;
+            
+            cursor: pointer;
+            
+            @include mobile() {
+                margin-top: 20px;
+            }
+        }
+        
+        .button:hover {
+            background-color: $linkHover;
+        }
+        
+        // .linkButton {
+        //     height: 40px;
+        //     // width: 150px;
+            
+        //     background-color: $linkColour;
+        //     color: white;
+        // }
+        // .githubButton {
+        //     height: 40px;
+        // }
+    }
+    
+    .content {
+        
+    }
 }
