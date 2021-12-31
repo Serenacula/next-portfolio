@@ -12,7 +12,7 @@ description: "This is the site you're currently on! I completely rebuilt my port
 
 This is a complete reimplementation of my portfolio website, using Next.js.
 
-Within the React world, there is two main frameworks: Gatsby, which focuses on static sites, and Next.js, which focuses on server-rendered sites. After learning Gatsby, and having heard that Next.js now supported static rendering as well, I decided to learn Next.js as well.
+Within the React ecosystem, there is two main web frameworks: Gatsby, which focuses on static sites, and Next.js, which focuses on server-rendered sites. After learning Gatsby, and having heard that Next.js now supported static rendering as well, I decided to learn Next.js to see how it compares.
 
 To do this, I rebuilt my portfolio website using the different technology. Since this wasn't a visual redesign most of the visual elements remained the same, though a few parts received a soft refresh. The technology, however, is completely different.
 

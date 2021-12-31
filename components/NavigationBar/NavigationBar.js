@@ -112,7 +112,7 @@ function NavigationBar(props) {
 				<div className={styles.hiddenLogo} />
 			)}
 
-			<button className={styles.menuHamburger} onClick={menuClickHandler}>
+			<button className={styles.menuHamburger} onClick={menuClickHandler} ariaLabel="Open Menu">
 				<span className="topSpan" />
 				<span className="middleSpan" />
 				<span className="bottomSpan" />

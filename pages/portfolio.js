@@ -1,5 +1,6 @@
 import fs from "fs"
 import matter from "gray-matter"
+import Head from "next/head"
 
 import PortfolioProject from "../components/PortfolioProject/PortfolioProject"
 
@@ -25,6 +26,10 @@ export default function Portfolio( props ) {
     
     return (
         <div className={styles.mainDiv}>
+            <Head>
+                <title>Portfolio | Faylee Murray Browne</title>
+            </Head>
+        
             <h1 className={styles.title}>Portfolio</h1>
         
             {makePosts(projects)}

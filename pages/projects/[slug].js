@@ -1,7 +1,7 @@
 import fs from "fs"
 import matter from "gray-matter"
 import { marked } from "marked"
-
+import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -16,6 +16,9 @@ function ProjectPage(props) {
     
     return (
         <div className={styles.mainDiv}>
+            <Head>
+                <title>{frontmatter.title + " | Faylee Murray Browne"}</title>
+            </Head>
             <img className={styles.image} src={image} alt="" />
             <h1 className={styles.title}>{frontmatter.title}</h1>
             <div className={styles.buttonContainer}>
