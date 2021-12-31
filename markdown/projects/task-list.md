@@ -1,7 +1,7 @@
 ---
 title: "Task List"
 date: "2020-06-28"
-image: ""
+image: "ejs-tasklist.png"
 link: "https://serenacula-tasklist.herokuapp.com/"
 type: "project"
 features: ["node", "express", "ejs", "mongodb"]
