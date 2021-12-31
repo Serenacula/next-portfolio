@@ -21,14 +21,18 @@ function ProjectPage(props) {
             <div className={styles.buttonContainer}>
                 {frontmatter.link && frontmatter.link != "" ?
                     <Link href={frontmatter.link}>
+                        <a>
                         <button className={styles.button}>Visit Project</button>
+                        </a>
                     </Link>
                 : null
                 }
                 
                 {frontmatter.github && frontmatter.github != "" ?
                     <Link href={frontmatter.github}>
+                        <a>
                         <button className={styles.button}>Github</button>
+                        </a>
                     </Link>
                 : null
                 }
