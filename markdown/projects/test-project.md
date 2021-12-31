@@ -3,6 +3,7 @@ title: "Test Project"
 date: "2021-04-18"
 image: "react-logo.svg"
 link: ""
+github: ""
 type: "project"
 features: []
 posted: false

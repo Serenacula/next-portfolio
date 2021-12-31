@@ -111,8 +111,8 @@ export default function Home() {
                             <h3>React</h3>
                             <p>My framework of choice, as well as an industry standard, I have spent the last two months getting comfortable with React. I find it both intuitive and well thought-out, and it is a skillset I wish to truly master.</p>
                             
-                            <h3>Gatsby</h3>
-                            <p>The framework that made this site! Gatsby builds on top of React to create static sites, allowing for a fast and reactive frontend. It is an excellent modern framework that competes with Next.js. </p>
+                            <h3>Next.js</h3>
+                            <p>The framework that made this site! Next.js builds on top of React to create a complete design framework. It takes care of all the backend and under-the-hood parts of web design, making it ideal for frontend developers.</p>
                             
                             <h3>GSAP</h3>
                             <p>A modern animation framework that works well with React, GSAP is my current choice for making beautiful and easy animations.</p>
