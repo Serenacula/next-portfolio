@@ -8,7 +8,7 @@ import Image from "next/image"
 // CSS
 import styles from "../css/index.module.scss"
 
-import headerImage from "../public/images/amsterdam.png"
+import headerImage from "../public/images/amsterdam.webp"
 
 
 export default function Home() {

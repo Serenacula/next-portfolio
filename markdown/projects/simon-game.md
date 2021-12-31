@@ -1,7 +1,7 @@
 ---
 title: "Simon Game"
 date: "2020-05-05"
-image: "simon-game.png"
+image: "simon-game"
 link: "https://serenacula.github.io/simon-game/"
 type: "project"
 features: ["html", "javascript", "jquery"]

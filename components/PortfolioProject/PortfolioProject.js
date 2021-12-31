@@ -16,9 +16,9 @@ function PortfolioProject(props) {
     // Make sure that an image exists, else display nothing.
     let image;
     if (frontmatter.image) {
-        image = "/images/" + frontmatter.image
+        image = "/images/projects/webp/" + frontmatter.image + ".webp"
     } else {
-        image = ""
+        image = "/images/projects/webp/" + frontmatter.image + ".webp"
     }
     
     // This is a list of all the featured technologies associated with a project
@@ -85,7 +85,7 @@ function PortfolioProject(props) {
 			<div className={styles.containerDiv}>
 				<div className={styles.topDiv}>
 					<div className={styles.leftBox}>
-						<Link href="/projects/${project}">
+						<Link href={`/projects/${slug}`}>
 							<a>
 								<img className={styles.image} src={image} alt={image} />
 							</a>

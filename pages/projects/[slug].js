@@ -12,7 +12,7 @@ function ProjectPage(props) {
     const frontmatter = props.frontmatter
     const content = marked.parse(props.content)
     
-    const image = "/images/" + frontmatter.image
+    const image = "/images/projects/webp/" + frontmatter.image + ".webp"
     
     return (
         <div className={styles.mainDiv}>

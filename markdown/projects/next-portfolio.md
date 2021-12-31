@@ -1,7 +1,7 @@
 ---
 title: "Next.js Portfolio"
 date: "2021-12-01"
-image: "svg/next-logo.svg"
+image: "next-portfolio"
 link: ""
 type: "project"
 features: ["sass", "react", "next", "gsap"]

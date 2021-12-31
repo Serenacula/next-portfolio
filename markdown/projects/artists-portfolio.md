@@ -1,7 +1,7 @@
 ---
 title: "Artist's Portfolio"
 date: "2020-06-04"
-image: "2020sterner.png"
+image: "2020sterner"
 link: "https://serenacula.github.io/artists-portfolio/"
 type: "project"
 features: ["html", "css", "bootstrap"]

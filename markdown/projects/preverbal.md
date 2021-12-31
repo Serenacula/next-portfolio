@@ -1,7 +1,7 @@
 ---
 title: "Preverbal"
 date: "2021-02-18"
-image: "cave-of-sounds.jpeg"
+image: "cave-of-sounds"
 link: "https://preverbal.herokuapp.com/"
 github: ""
 type: "project"

@@ -1,7 +1,7 @@
 ---
 title: "Gatsby Portfolio"
 date: "2021-08-22"
-image: "gatsby-portfolio3.png"
+image: "gatsby-portfolio"
 link: "https://serenacula-gatsby-portfolio.herokuapp.com"
 github: "https://github.com/Serenacula/gatsby-portfolio"
 type: "project"
