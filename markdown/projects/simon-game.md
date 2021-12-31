@@ -3,6 +3,7 @@ title: "Simon Game"
 date: "2020-05-05"
 image: "simon-game"
 link: "https://serenacula.github.io/simon-game/"
+github: "https://github.com/Serenacula/simon-game"
 type: "project"
 features: ["html", "javascript", "jquery"]
 posted: true

@@ -3,6 +3,7 @@ title: "First Website"
 date: "2020-05-01"
 image: "first-website"
 link: "https://serenacula.github.io/html-portfolio/"
+github: "https://github.com/Serenacula/html-portfolio"
 type: "project"
 features: ["html", "css", "bootstrap"]
 posted: true
