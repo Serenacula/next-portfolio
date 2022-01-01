@@ -47,7 +47,9 @@
                     color: $linkColour;
 
                 }
-                
+                .title:hover {
+                    color: $linkHover
+                }
             }
             
             .date {
