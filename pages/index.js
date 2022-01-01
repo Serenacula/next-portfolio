@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Next Portfolio</title>
+				<title>Faylee Murray Browne</title>
 				
 			</Head>
 
@@ -42,21 +42,7 @@ export default function Home() {
                     </div>
                 </div>
                 
-                {/* This section's been removed because it looked unprofessional, and didn't add much to the page */}
-                {/* <div className="secondColourBackground">
-                    
-                    <div className={combine("mainColumn", styles.secondSection)}>
-                    
-                        <h2 className={combine(styles.sectionTitle, "secondColourText")}>About Me</h2>
-                        
-                        <div className={combine("firstColourBackground", styles.secondSectionCard)}>
-                            <p>{"Hi. I'm a newbie web dev, living in the UK."}</p>
-                            
-                            <p>Last summer I decided to learn how to make websites in my spare time. This site is to show a little of what I've learnt.</p>
-                        </div>
-                        
-                    </div>
-                </div> */}
+                {/* second section removed */}
 			
                 <div className={styles.thirdSection}>
                 
@@ -109,7 +95,7 @@ export default function Home() {
                         <div className={styles.card}>
                             
                             <h3>React</h3>
-                            <p>My framework of choice, as well as an industry standard, I have spent the last two months getting comfortable with React. I find it both intuitive and well thought-out, and it is a skillset I wish to truly master.</p>
+                            <p>My framework of choice, as well as an industry standard, I have spent the last few months months getting comfortable with React. I find it both intuitive and well thought-out, and it is a skillset I wish to truly master.</p>
                             
                             <h3>Next.js</h3>
                             <p>The framework that made this site! Next.js builds on top of React to create a complete design framework. It takes care of all the backend and under-the-hood bits, making it ideal for frontend developers.</p>

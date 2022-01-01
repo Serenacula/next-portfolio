@@ -19,7 +19,7 @@
 
 	text-align: left;
 	margin: 15px 5px;
-	padding: 30px 15px;
+	padding: 25px 15px 30px;
 	max-width: 600px;
 	height: fit-content;
     
@@ -27,12 +27,16 @@
     
     
 	h3 {
+        padding-top: 25px;
+        margin-bottom: 0;
+        
         font-family: Merriweather, serif;
 		font-size: 1.2rem;
 		color: $secondTextColour;
 	}
     
 	p {
+        
         font-size: 1rem;
 		line-height: 1.5rem;
         color: $normalText;
@@ -46,8 +50,10 @@
 
 .firstSection {
     @include mainColumn;
-	height: 100vh;
+	min-height: 100vh;
+    height: fit-content;
 	background-color: $firstBackgroundColour;
+    padding-bottom: 1px;
     
     
 
@@ -64,14 +70,15 @@
 		font-family: Merriweather, serif;
 		font-size: 1.5rem;
 		color: $firstTextColour;
+        margin-bottom: 150px;
 	}
 
 	.headerImage {
-		position: relative;
+		position: static;
 		top: 60px;
 		max-width: 550px;
 		margin: 0 auto;
-		padding-bottom: 1px;
+		padding-bottom: 50px;
 	}
 }
 

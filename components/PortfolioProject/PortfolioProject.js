@@ -94,7 +94,7 @@ function PortfolioProject(props) {
 					<div className={styles.rightBox}>
 						<Link className={styles.title} href={`/projects/${slug}`}>
 							<a>
-								<h2 className={styles.title}>{frontmatter.title}</h2>
+								<h2 className={styles.title}>{frontmatter.title + " »"}</h2>
 							</a>
 						</Link>
 						{/* <p className={styles.date}>{frontmatter.date}</p> */}
