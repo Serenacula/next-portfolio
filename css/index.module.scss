@@ -82,28 +82,28 @@
 	}
 }
 
-.secondSection {
-	/* text-align: left; */
-	font-size: 1.1rem;
+// .secondSection {
+// 	/* text-align: left; */
+// 	font-size: 1.1rem;
     
-    .secondSectionCard {
-        /* box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40);
-        -webkit-box-shadow: 1px 5px 18px 2px rgba(0,0,0,0.30);
-        -moz-box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40); */
-        border-radius: 8px;
-        border: 2px solid black;
+//     .secondSectionCard {
+//         /* box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40);
+//         -webkit-box-shadow: 1px 5px 18px 2px rgba(0,0,0,0.30);
+//         -moz-box-shadow: 1px 2px 18px 2px rgba(0,0,0,0.40); */
+//         border-radius: 8px;
+//         border: 2px solid black;
     
-        text-align: center;
-        margin: 15px auto;
-        padding: 30px 15px;
-        max-width: 600px;
-        height: fit-content;
-    }
-}
+//         text-align: center;
+//         margin: 15px auto;
+//         padding: 30px 15px;
+//         max-width: 600px;
+//         height: fit-content;
+//     }
+// }
 
-.thirdSectionMain,
-.fourthSection,
-.fifthSection {
+.secondSectionMain,
+.thirdSection,
+.fourthSection {
     @include mainColumn;
 	min-height: 100vh;
     
@@ -118,7 +118,7 @@
     }
 }
 
-.thirdSection {
+.secondSection {
 	background-color: $thirdBackgroundColour;
 
 	.skillsTitle {
@@ -129,14 +129,14 @@
 		color: $thirdTextColour;
 	}
     
-    .thirdSectionMain {
+    .secondSectionMain {
         .sectionTitle {
             color: $thirdTextColour;
         }
     }
 }
 
-.fourthSection {
+.thirdSection {
     background-color: $fourthBackgroundColour;
     
     .sectionTitle {
@@ -148,10 +148,31 @@
     }
 }
 
-.fifthSection {
+.fourthSection {
     background-color: $fifthBackgroundColour;
     
     .sectionTitle {
         color: $fifthTextColour;
+    }
+}
+
+.fifthSection {
+    width: 100%;
+    // height: 200px;
+    padding: 100px;
+    
+    background-color: $sixthBackgroundColour;
+    .footerTitle {
+        color: $sixthTextColour;
+        text-align: center;
+        vertical-align: middle;
+        font-family: Merriweather, serif;
+        font-size: 2rem;
+        text-decoration: underline;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .footerTitle:hover {
+        color: white;
     }
 }
