@@ -31,6 +31,12 @@ export default function Portfolio( props ) {
             </Head>
         
             <h1 className={styles.title}>Portfolio</h1>
+            <h2 className={styles.subtitle}>
+                Here you can view each project and their code. 
+                <br /> 
+                <br />
+                Or, you could go straight to my <a href="https://github.com/Serenacula">Github</a>.
+            </h2>
         
             {makePosts(projects)}
         </div>

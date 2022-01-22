@@ -10,11 +10,31 @@
     
     .title {
         text-align: center;
-        padding-bottom: 180px;
+        padding-bottom: 30px;
         
         font-family: Merriweather, serif;
         font-size: 3.5rem;
         color: $firstTextColour;
+    }
+    
+    .subtitle {
+        padding-bottom: 150px;
+        
+        text-align: center;
+        font-family: Merriweather, serif;
+        color: $firstTextColour;
+        
+        line-height: 2rem;
+        
+        a {
+            font-size: inherit;
+            font-family: inherit;
+            color: $linkColour;
+            
+            &:hover {
+                color: $linkHover
+            }
+        }
     }
 }
 
