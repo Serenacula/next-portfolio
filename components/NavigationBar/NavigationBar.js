@@ -123,8 +123,8 @@ function NavigationBar(props) {
         let result = list.map((item, index) => {
             return (
                 <li key={item.name + index}>
-                    <Link href={item.url}>
-                        <a className={styles.textStyle}>{item.name}</a>
+                    <Link className={styles.textStyle} href={item.url}>
+                        {item.name}
                     </Link>
                 </li>
             )
@@ -137,8 +137,8 @@ function NavigationBar(props) {
         <nav ref={navObject} className={styles.navBar}>
             {/* The Logo Button */}
             {!suppressLogo && router.pathname != "/" ? (
-                <Link href="/">
-                    <a className={styles.logo}>Faylee</a>
+                <Link className={styles.logo} href="/">
+                    Faylee
                 </Link>
             ) : (
                 <div className={styles.hiddenLogo} />

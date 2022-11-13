@@ -216,6 +216,28 @@ function PortfolioProject(props) {
                         />
                     )
                     break
+                case "puppeteer":
+                    result.push(
+                        <img
+                            className={styles.feature}
+                            src="/images/svg/puppeteer-logo.svg"
+                            alt="puppeteer"
+                            title="Puppeteer Headless Browser"
+                            key={key}
+                        />
+                    )
+                    break
+                case "jest":
+                    result.push(
+                        <img
+                            className={styles.feature}
+                            src="/images/svg/jest-logo.svg"
+                            alt="jest"
+                            title="Jest Testing Library"
+                            key={key}
+                        />
+                    )
+                    break
                 default:
                     break
             }
@@ -229,13 +251,11 @@ function PortfolioProject(props) {
                 <div className={styles.topDiv}>
                     <div className={styles.leftBox}>
                         <Link href={`/projects/${slug}`}>
-                            <a>
-                                <img
-                                    className={styles.image}
-                                    src={image}
-                                    alt={image}
-                                />
-                            </a>
+                            <img
+                                className={styles.image}
+                                src={image}
+                                alt={image}
+                            />
                         </Link>
                     </div>
                     <div className={styles.rightBox}>
@@ -243,11 +263,9 @@ function PortfolioProject(props) {
                             className={styles.title}
                             href={`/projects/${slug}`}
                         >
-                            <a>
-                                <h2 className={styles.title}>
-                                    {frontmatter.title + " »"}
-                                </h2>
-                            </a>
+                            <h2 className={styles.title}>
+                                {frontmatter.title + " »"}
+                            </h2>
                         </Link>
                         {/* <p className={styles.date}>{frontmatter.date}</p> */}
                         <p className={styles.description}>
