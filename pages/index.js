@@ -17,7 +17,6 @@ export default function Home() {
 		<div className={styles.container}>
 			<Head>
 				<title>Faylee Murray Browne</title>
-				
 			</Head>
 
 
