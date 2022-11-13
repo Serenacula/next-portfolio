@@ -5,16 +5,7 @@ image: "used-and-loved"
 link: "https://usedandloved.com"
 github: ""
 type: "project"
-features:
-    [
-        "javascript",
-        "typescript",
-        "neo4j",
-        "jest",
-        "puppeteer",
-        "docker",
-        "bullmq",
-    ]
+features: ["javascript", "typescript", "neo4j", "jest", "docker", "bullmq"]
 posted: true
 description: "This was a 3 month project working for a startup. My job involved building the webscraper and database input for the website Used & Loved, a search engine that searches for used goods."
 ---
