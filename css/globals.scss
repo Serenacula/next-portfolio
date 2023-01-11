@@ -1,9 +1,11 @@
+@import "./colours";
+
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 html {
@@ -28,25 +30,43 @@ body {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    a {
+        text-decoration: underline;
+
+        color: $linkColour;
+    }
+    a:hover {
+        color: $linkHover;
+    }
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-p, a {
+p,
+a {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 1.1rem;
     line-height: 2rem;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
