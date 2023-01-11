@@ -16,7 +16,7 @@ This project was at a much bigger scale than anything else I have done, and was 
 
 Instead, I decided to build a generalised webscraper API, able to handle a variety of different website setups with only minimal input - the maintainer would be able to provide the details of where on the page to find product details, and then the API would handle everything else. This means fetching the product-list, fetching the data for each product, error-handling, data processing, sanitisation, etc., were all handled automatically.
 
-Alongside this, I also built an automated testing infrastructure with jest, which was able to check that all the website products were correctly receiving product data, and that the data was formatted correctly. Rather than simply building individual tests, this allowed the maintainer to quickly add appropriate tests for any new websites being scraped.
+Alongside this, I also built an automated testing infrastructure with jest, which was able to check that all the website products were correctly receiving product data, and that the data was formatted correctly. Rather than simply building individual tests, this allowed the maintainer to quickly add appropriate tests for any new websites being scraped, checking that data was correctly received, any vital data wasn't being missed, and that it was formatted correctly.
 
 All the data from the webscraper then had to be entered into the Neo4J database. However, since that could potentially include millions of products from hundreds of websites, this system needed to be able to function at scale.
 

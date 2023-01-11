@@ -2,7 +2,7 @@
 title: "Task List"
 date: "2020-06-28"
 image: "ejs-tasklist"
-link: "https://serenacula-tasklist.herokuapp.com/"
+link: "https://ejs-tasklist.onrender.com/"
 github: "https://github.com/Serenacula/ejs-tasklist"
 type: "project"
 features: ["node", "express", "ejs", "mongodb"]
